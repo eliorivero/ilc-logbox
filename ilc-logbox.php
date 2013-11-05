@@ -1,10 +1,10 @@
 <?php
 /**
  * Plugin Name: ILC LogBox
- * Plugin URI: http://ilovecolors.com.ar/
+ * Plugin URI: http://themesrobot.com/
  * Description: Creates a log in and log out form with a shortcode.
  * Author: Elio Rivero
- * Author URI: http://ilovecolors.com.ar
+ * Author URI: http://themesrobot.com/
  * Version: 1.0.0
  */
 
@@ -46,7 +46,7 @@ class TR_LogBox {
 				break;
 		}
 		
-		if ( !is_user_logged_in() ){
+		if ( !is_user_logged_in() ) {
 		$html = '
 		<form class="logbox" action="' . wp_login_url() . '" method="post">
 		    <input type="text" placeholder="' . __('Username', 'ilc') . '" name="log" id="log" value="" size="20" />
@@ -72,4 +72,3 @@ class TR_LogBox {
 }
 
 new TR_LogBox();
-?>
